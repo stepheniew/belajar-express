@@ -2,6 +2,8 @@ const express = require("express") //impor modul express
 const app = express() //inisialisasi express
 const port = 3000 //port
 
+app.set('view engine','ejs');
+
 // route /
 app.get("/",(req,res)=>{
     //res.send("Hello");
