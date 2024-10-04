@@ -21,10 +21,7 @@ app.get("/",(req,res)=>{
             judul: "Berita 2",
             isi: "Isi berita 2"
         },
-        {
-            judul: "Berita 3",
-            isi: "Isi berita 3"
-        },
+
 
     ];
     res.render('home',{title:'Halaman Home',berita,layout:'main'});
