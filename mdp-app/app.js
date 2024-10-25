@@ -10,7 +10,8 @@ const connectDB = require('./app_api/models/db');
 var indexRouter = require('./app_server/routes/index');
 var usersRouter = require('./app_server/routes/users');
 var prodiRouter = require('./app_server/routes/prodi');
-const fakultasController = require('./app_api/routes/fakultas');
+const fakultasRouter = require('./app_api/routes/fakultas');
+const prodiRouters = require('./app_api/routes/prodi')
 
 var app = express();
 
@@ -30,6 +31,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/prodi',prodiRouter);
 app.use('/api/fakultas',fakultasRouter);  
+app.use('/api/prodi',prodiRouters)
 
 //CONNECT TO MONGODB
 connectDB();

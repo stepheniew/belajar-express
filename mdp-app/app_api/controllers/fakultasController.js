@@ -20,7 +20,7 @@ const getFakultasById = async(req,res)=>{
 const createFakultas = async(req,res)=>{
     const fakultas = new Fakultas({
         nama : req.body.nama,
-        singkatan : req.body.singaktan,
+        singkatan : req.body.singkatan,
     });
     try{
         const newFakultas = await fakultas.save();
