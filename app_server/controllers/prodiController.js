@@ -1,6 +1,6 @@
 
 const prodi=(req,res)=>{
-    const prodii = [
+    const prodi = [
                 {
                     programStudi: "Sistem Informasi",
                     fakultas: "FIKR",
@@ -33,7 +33,7 @@ const prodi=(req,res)=>{
                 },
            
             ];
-            res.render('prodi',{title:'Program Studi',prodii,layout:'main'});
+            res.render('prodi',{title:'Program Studi',prodi,layout:'main'});
 }
 
 
