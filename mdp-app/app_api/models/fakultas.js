@@ -6,7 +6,7 @@ const fakultasSchema = new mongoose.Schema({
         required : true,
         trim : true,
     },
-    singkatan:{
+    singkatan:{ 
         type:String,
         required:true,
         trim : true,
