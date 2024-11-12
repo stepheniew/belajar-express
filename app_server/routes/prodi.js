@@ -3,6 +3,6 @@ var router = express.Router();
 
 const prodiController = require('../controllers/prodiController')
 
-router.get('/ ',prodiController.prodi)
+router.get('/',prodiController.prodi)
 
 module.exports = router;
