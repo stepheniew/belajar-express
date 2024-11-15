@@ -12,7 +12,10 @@ var usersRouter = require('./app_server/routes/users');
 var prodiRouter = require('./app_server/routes/prodi');
 var fakultasRouter = require('./app_server/routes/fakultas');
 const fakultasRouters = require('./app_api/routes/fakultas');
-const prodiRouters = require('./app_api/routes/prodi')
+const prodiRouters = require('./app_api/routes/prodi');
+const authRouters = require('./app_api/routes/auth');
+
+require("dotenv").config();
 
 var app = express();
 
@@ -34,6 +37,7 @@ app.use('/prodi',prodiRouter);
 app.use('/fakultas',fakultasRouter);
 app.use('/api/fakultas',fakultasRouters);  
 app.use('/api/prodi',prodiRouters);
+app.use('/api/auth', authRouters)
 
 
 //CONNECT TO MONGODB
