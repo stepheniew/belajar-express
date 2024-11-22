@@ -1,7 +1,7 @@
 const express = require("express"); // Mengimpor framework Express.js
 const router = express.Router(); // Membuat instance Router dari Express
 const mahasiswaController = require("../controllers/mahasiswaController"); // Mengimpor controller untuk mahasiswa
-const upload = require("../controllers/uploadMiddleware"); // Middleware untuk menangani upload file
+const upload = require("../middleware/uploadMiddleware"); // Middleware untuk menangani upload file
 
 // Mengimpor middleware untuk autentikasi dan pengecekan peran
 const authMiddleware = require("../middleware/authMiddleware");
