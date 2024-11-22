@@ -14,6 +14,8 @@ var fakultasRouter = require('./app_server/routes/fakultas');
 const fakultasRouters = require('./app_api/routes/fakultas');
 const prodiRouters = require('./app_api/routes/prodi');
 const authRouters = require('./app_api/routes/auth');
+const mahasiswaRouterApi = require('./app_api/routes/mahasiswa');
+
 
 require("dotenv").config();
 
@@ -37,7 +39,8 @@ app.use('/prodi',prodiRouter);
 app.use('/fakultas',fakultasRouter);
 app.use('/api/fakultas',fakultasRouters);  
 app.use('/api/prodi',prodiRouters);
-app.use('/api/auth', authRouters)
+app.use('/api/auth', authRouters);
+app.use('/api/mahasiswa', mahasiswaRouterApi);  
 
 
 //CONNECT TO MONGODB

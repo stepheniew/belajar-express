@@ -21,7 +21,7 @@ const prodiSchema = new mongoose.Schema({
         default : Date.now,
     },
 
-});
+}); 
 
 const Prodi = mongoose.model("Prodi",prodiSchema);
 
